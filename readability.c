@@ -21,10 +21,9 @@ int main(void)
             number_of_letters ++;
         }
     }
-    
 
     //find number of words
-    int number_of_words = 1;
+    int number_of_words = 0;
 
     for (int i = 0; i < strlen(text); i++)
     {
@@ -34,7 +33,7 @@ int main(void)
         }
 
     }
-   
+    
 
     //find number of sentences
     int sentences = 0;
@@ -54,26 +53,25 @@ int main(void)
     float S = (100 * ((float)sentences / (float)number_of_words));
 
     //put L and S into formula
-    float gradef = (((L * 0.058) - (0.296 *S))- 15.8 );
-   
+    float gradef = (((L * 0.0588) - (0.296 *S))- 15.8 );
 
     //round the grade
     int grade = round(gradef);
-    
 
     //print the correct grade band
     if ( grade >16 )
     {
-        printf("Grade 16+ \n");
+        printf("grade 16+ \n");
     }
     else if (grade < 1)
     {
-        printf("Before grade 1 \n");
+        printf("before grade 1 \n");
     }
     else
     {
-        printf("Grade %i \n", grade);
+        printf("grade %i \n", grade);
     }
 
 }
+
 
