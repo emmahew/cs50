@@ -21,7 +21,7 @@ int main(void)
             number_of_letters ++;
         }
     }
-    printf("number of letters: %i \n", number_of_letters);
+    
 
     //find number of words
     int number_of_words = 1;
@@ -34,7 +34,7 @@ int main(void)
         }
 
     }
-    printf("number of words: %i \n", number_of_words);
+   
 
     //find number of sentences
     int sentences = 0;
@@ -45,7 +45,7 @@ int main(void)
             sentences ++;
         }
     }
-    printf("number of sentences: %i \n", sentences);
+    
 
     //calculation
     //finding L and S
@@ -55,11 +55,11 @@ int main(void)
 
     //put L and S into formula
     float gradef = (((L * 0.058) - (0.296 *S))- 15.8 );
-    printf("grade= %f \n" , gradef);
+   
 
     //round the grade
     int grade = round(gradef);
-    printf("rounded grade %i \n", grade);
+    
 
     //print the correct grade band
     if ( grade >16 )
