@@ -16,7 +16,7 @@ int main(void)
     int number_of_letters = 0;
     for (int l = 0; l < strlen(text); l++)
     {
-        if ((text[l] >= 'A' && text[l] <= 'Z' ) || (text[l] >= 'a' && text[l] <= 'z'))
+        if ((text[l] >= 'A' && text[l] <= 'Z') || (text[l] >= 'a' && text[l] <= 'z'))
         {
             number_of_letters ++;
         }
@@ -52,13 +52,13 @@ int main(void)
     float S = (100 * ((float)sentences / (float)number_of_words));
 
     //put L and S into formula
-    float gradef = (((L * 0.0588) - (0.296 *S))- 15.8 );
+    float gradef = (((L * 0.0588) - (0.296 * S)) - 15.8);
 
     //round the grade
     int grade = round(gradef);
 
     //print the correct grade band
-    if ( grade >16 )
+    if (grade >16)
     {
         printf("Grade 16+\n");
     }
