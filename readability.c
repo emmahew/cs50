@@ -16,14 +16,14 @@ int main(void)
     int number_of_letters = 0;
     for (int l = 0; l < strlen(text); l++)
     {
-        if (text[l] >= 'A' && text[l] <= 'z')
+        if ((text[l] >= 'A' && text[l] <= 'Z' ) || (text[l] >= 'a' && text[l] <= 'z'))
         {
             number_of_letters ++;
         }
     }
 
     //find number of words
-    int number_of_words = 0;
+    int number_of_words = 1;
 
     for (int i = 0; i < strlen(text); i++)
     {
@@ -34,7 +34,6 @@ int main(void)
 
     }
     
-
     //find number of sentences
     int sentences = 0;
     for (int j = 0; j < strlen(text); j++)
