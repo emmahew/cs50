@@ -60,15 +60,15 @@ int main(void)
     //print the correct grade band
     if ( grade >16 )
     {
-        printf("grade 16+ \n");
+        printf("Grade 16+ \n");
     }
     else if (grade < 1)
     {
-        printf("before grade 1 \n");
+        printf("Before Grade 1 \n");
     }
     else
     {
-        printf("grade %i \n", grade);
+        printf("Grade %i \n", grade);
     }
 
 }
